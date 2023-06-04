@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  height: max-content;
+  margin: 0;
+  box-sizing: border-box;
+  height: 474px;
+  width: 481px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1 {
+  font-style: italic;
+  font-weight: bold;
+  /* background-color: hsl(228, 45%, 44%); */
+  font-size: 56px;
+  text-align: center;
+  /* color: whitesmoke; */
+}
+/*h2 , h3{
+    color: whitesmoke;
+}*/
+p,
+h3 {
+  color: rgb(209, 198, 198);
+}
+.result {
+  background-color: hsl(228, 45%, 44%);
+  text-align: center;
+  flex-wrap: nowrap;
+  border-radius: 10%;
+}
+/* .reaction-card { 
+  color: red;
+  background-color: rgb(235, 204, 204);
+  display: inline-flex;
+}*/
+h5 {
+  color: black;
+}
+.summary {
+  flex-wrap: nowrap;
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 200px;
+}
+
+.reaction-card {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  color: red;
+  background-color: rgb(235, 204, 204);
+  border-radius: 6px;
+}
+.memory-card {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  color: yellowgreen;
+  background-color: rgb(224, 229, 195);
+  border-radius: 6px;
+}
+.marks {
+  border-radius: 50%;
+  color: rgb(122, 26, 26);
+  display: flex;
+  background-color: rgb(36, 36, 142);
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  margin: auto;
+}
