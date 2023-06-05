@@ -13,11 +13,11 @@ body {
 
 .main-container {
   display: flex;
-  height: max-content;
+  /* height: max-content; */
   margin: 0;
   box-sizing: border-box;
-  height: 474px;
-  width: 481px;
+  height: 385px;
+  width: 565px;
 }
 
 .container {
@@ -41,11 +41,20 @@ h3 {
   color: rgb(209, 198, 198);
 }
 .result {
-  background-color: hsl(228, 45%, 44%);
+  background-color: hsl(241, 81%, 54%);
   text-align: center;
-  flex-wrap: nowrap;
+  display: flex;
   border-radius: 10%;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 0;
+  background-image: linear-gradient(
+    hsl(241.66deg 71.54% 50.39%),
+    hsl(241.28deg 78.33% 52.94%)
+  );
 }
+
 /* .reaction-card { 
   color: red;
   background-color: rgb(235, 204, 204);
@@ -61,33 +70,72 @@ h5 {
   align-items: baseline;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 200px;
+  width: 394px;
+  background-color: whitesmoke;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .reaction-card {
-  width: 100%;
+  width: 84%;
   display: inline-flex;
   justify-content: space-between;
-  color: red;
+  color: hsl(0, 100%, 67%);
   background-color: rgb(235, 204, 204);
-  border-radius: 6px;
+  border-radius: 8px;
+  font-size: x-large;
 }
 .memory-card {
-  width: 100%;
+  width: 84%;
   display: inline-flex;
   justify-content: space-between;
-  color: yellowgreen;
+  color: hsl(39, 100%, 56%);
   background-color: rgb(224, 229, 195);
-  border-radius: 6px;
+  border-radius: 8px;
+  font-size: x-large;
 }
 .marks {
   border-radius: 50%;
-  color: rgb(122, 26, 26);
+  color: hsl(0, 0%, 100%);
   display: flex;
-  background-color: rgb(36, 36, 142);
+  background-color: hsl(252, 100%, 67%);
   flex-direction: column;
   height: 100px;
   width: 100px;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
+  max-height: 25%;
+  background-image: linear-gradient(
+    hsl(249.78deg 100% 23.15%),
+    hsl(241, 81%, 54%)
+  );
+}
+.verbal-card {
+  width: 84%;
+  display: inline-flex;
+  justify-content: space-between;
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166deg 77.02% 78.75%);
+  border-radius: 8px;
+  font-size: x-large;
+}
+.visual-card {
+  width: 84%;
+  display: inline-flex;
+  justify-content: space-between;
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(221, 100%, 96%);
+  border-radius: 8px;
+  font-size: x-large;
+}
+.continue-card {
+  width: 84%;
+  display: inline-flex;
+  color: whitesmoke;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 18px;
+  font-size: large;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
